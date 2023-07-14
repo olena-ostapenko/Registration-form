@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>
+                Learn to code by watching others
+            </h1>
+            <p>
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                understanding how developers think is invaluable.
+            </p>
+
+        </div>
+        <div class="right">
+            <div class="baner center">
+                <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+            </div>
+            <div class="form-conteiner">
+                <form action="" autocomplete="off" class="formWithValidation">
+                    <section>
+                        <div class="form-inputs">
+                            <div class="input">
+
+                                <input type="text" id="name" placeholder="Name" name="name" class="info">
+                                <p class="error-text red-text" id="nameErrorText" hidden>First Name cannot be empty</p>
+                            </div>
+                            <div class="input">
+
+                                <input type="text" id="lastname" placeholder="Last Name" name="lastname" class="info">
+                                <p class="error-text red-text" id="lastnameErrorText" hidden>Last Name cannot be empty</p>
+                            </div>
+                            <div class="input">
+
+                                <input type="text" id="email" placeholder="Email Address" name="email" class="info">
+                                <p class="error-text red-text" id="emailErrorText"  hidden>Looks like this is not an email</p>
+                            </div>
+                            <div class="input">
+
+                                <input type="password" id="password" placeholder="Password" name="password" class="info">
+                                <p class="error-text red-text" id="errorpassword" hidden>Password cannot be empty</p>
+                            </div>
+                            <div>
+                                <input type="submit" class="submit-error submit" value="CLAIM YOUR FREE TRIAL" id="submit">
+                            </div>
+                        </div>
+
+                        <div class="form-text center">
+                            <p class="submit-text">By clicking the button, you are agreeing to our <a href="#"
+                                    class="red-text">Terms and Services</a></p>
+                        </div>
+
+                    </section>
+                </form>
+                <div class="finish-word center" hidden>Thank you for your submit</div>
+            </div>
+
+        </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+
+</html>

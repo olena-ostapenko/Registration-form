@@ -1,0 +1,236 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* fonts */
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: 0.52px;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+   
+
+}
+.left>p {
+    margin-top: 20px;
+}
+.baner>p {
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 17px;
+    letter-spacing: 0.27px;
+ 
+}
+p span {
+    font-weight: 700;
+   
+}
+.center{
+    text-align: center;
+}
+.submit-text{
+    font-size: 11px;
+    color:rgba(186, 183, 212, 1);
+}
+.red-text{
+    font-weight:700;
+    color: rgba(255, 121, 121, 1);
+}
+.error-text{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: end;
+  
+}
+/* ///////// */
+html {
+    height: 100%;
+    font-family: 'Poppins';
+}
+
+body {
+    height: 100vh;
+    background-image: url(./images/bacground.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    max-width: 1110px;
+    min-height: 558px;
+    display: flex;
+    flex-direction: row;
+    gap:45px;
+   
+}
+
+/* ///////// */
+.left {
+    color: #FFFFFF;
+    max-width: 525px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ///////// */
+.right {
+    max-width: 558px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:24px;
+}
+.form-conteiner {
+    width: 100%;
+    min-height: 474px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1469);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+.baner {
+    width: 100%;
+    min-height: 60px;
+    background-color: rgba(94, 84, 164, 1);
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1469);
+}
+
+.form-inputs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    min-width: 460px;
+    min-height: 56px;
+    border-radius: 5px;
+ 
+}
+
+input[type="text"],
+input[type="password"]{
+    outline: 0 !important;
+    box-shadow: none;
+    border: 1px solid rgba(222, 222, 222, 1);
+    padding: 0 16px;
+    color: rgba(61, 59, 72, 1);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    line-height: 26px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    color: rgba(61, 59, 72, 1);
+    border: 1px solid rgba(94, 84, 164, 1);
+}
+input[type="submit"]{
+    outline: 0 !important;
+    border: none;
+    background-color: rgba(56, 204, 139, 1);
+    font-size: 15px;
+    color:#FFFFFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: inset 0 -4px rgba(0, 0, 0, 0.0909);
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(119, 226, 179, 1);
+    cursor: pointer;
+}
+
+/* ///////// */
+.finish-word{
+    width: 100%;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: 0.52px;
+    color:rgba(94, 84, 164, 1)
+    
+}
+
+/* ///////// */
+input[type="text"].input-error,
+input[type="password"].input-error {
+    border: 2px solid rgba(255, 121, 121, 1);
+    background-image: url(./images/icon_error.svg);
+    background-repeat: no-repeat;
+    background-position: 409px;
+    
+}
+input[type="text"].input-error::placeholder, 
+input[type="password"].input-error::placeholder{
+    color: rgba(255, 121, 121, 1);
+}
+
+@media(max-width: 375px){
+    /* fonts */
+    h1{ 
+        padding-top: 88px;
+        font-size: 28px;
+    }
+    .baner>p{
+        padding: 0;
+    }
+    .main{
+        max-width: 327px;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        gap:64px;
+        padding-bottom: 68px;
+    }
+    .left{
+        max-width: 327px;
+        text-align: center;
+    }
+    .right{
+        max-width: 327px;
+
+    }
+    .baner{
+        padding:18px 66px;
+        min-height: 88px;
+    }
+    .form-conteiner {
+        min-height: 442px;
+        padding-bottom: 68px;
+        padding: 24px;
+    }
+    input{
+        min-width:279px;
+    }
+}
+
